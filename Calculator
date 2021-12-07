@@ -1,0 +1,93 @@
+import java.util.Scanner;
+public class Mod_Calculator{
+    public static void main(String Args[]){
+        Scanner Input = new Scanner(System.in);
+        double input;
+        double a,b,c,d,e,f,g,h,i,j,k,l;
+
+        System.out.println("My name is Calculator 2.0");
+        System.out.println("What Function Would You Like To Perform?");
+        System.out.println("1. Addition");
+        System.out.println("2. Subtraction");
+        System.out.println("3. Multiplication");
+        System.out.println("4. Division");
+        System.out.println("5. Squareroot");
+        System.out.println("6. Sine");
+        System.out.println("7. Cosine");
+        System.out.println("8. Tangent");
+        
+        
+        
+        while(true){
+            input = Input.nextDouble();
+            if (input==1){
+                System.out.print("Enter The First Number : ");
+                a = Input.nextDouble();
+                System.out.print("Enter The Second Number : ");
+                b = Input.nextDouble();
+                System.out.println(a+ " + " +b+ " = " +(a+b));
+            break;
+        } 
+    
+            if (input==2){
+                System.out.print("Enter The First Number : ");
+                c = Input.nextDouble();
+                System.out.print("Enter The Second Number : ");
+                d = Input.nextDouble();
+                System.out.println(c+ " - " +d+ " = " +(c-d));
+                break;
+            } 
+    
+            if (input==3){
+                System.out.print("Enter The First Number : ");
+                e = Input.nextDouble();
+                System.out.print("Enter The Second Number : ");
+                f = Input.nextDouble();
+                System.out.println(e+ " * " +f+ " = " +(e*f));
+                break;
+            } 
+    
+            if (input==4){
+                System.out.print("Enter The First Number : ");
+                g = Input.nextDouble();
+                System.out.print("Enter The Second Number : ");
+                h = Input.nextDouble();
+                System.out.println(g+ " / " +h+ " = " +(g/h));
+                break;
+            } 
+    
+            if (input==5){
+                System.out.print("Enter a number : ");
+                i = Input.nextDouble();
+                System.out.println("The Squareroot of " +i+ " is " +Math.sqrt(i));
+                break;
+            } 
+    
+            if (input==6){
+                System.out.print("Enter a number : ");
+                j = Input.nextDouble();
+                System.out.println("The Sine of " +j+ " is " +Math.sin(j));
+                break;
+            }
+    
+            if (input==7){
+                System.out.print("Enter a number : ");
+                k = Input.nextDouble();
+                System.out.println("The Cosine of " +k+ " is " +Math.cos(k));
+                break;
+            }
+    
+            if (input==8){
+                System.out.print("Enter a number : ");
+                l = Input.nextDouble();
+                System.out.println("The Tangent of " +l+ " is " +Math.tan(l));
+                break;
+            }
+
+            System.out.println("You have entered an invalid input, please retry");
+            
+        }
+
+       }
+    }
+        
